@@ -602,6 +602,7 @@
       'https://script.google.com/macros/s/AKfycbzbx6OX1e0_uDLWLqGWuse_X1G3R6mhcjaftuw1OHzOExDccb0L8CbgBDM3rfPHFUmN/exec?page=1&limit=10',
       (response) => {
         const { data } = response;
+        console.log(data)
         let list = '';
         for (let i = 0; i < data.length; i++) {
           const { name, wish, time } = data[i];
